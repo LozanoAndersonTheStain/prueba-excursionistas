@@ -1,3 +1,12 @@
 <Solution>
-  <Project Path="Excursionistas.csproj" />
+  <Folder Name="/src/">
+    <Project Path="src/Excursionistas.API/Excursionistas.API.csproj" />
+    <Project Path="src/Excursionistas.Application/Excursionistas.Application.csproj" />
+    <Project Path="src/Excursionistas.Domain/Excursionistas.Domain.csproj" />
+    <Project Path="src/Excursionistas.Infrastructure/Excursionistas.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Excursionistas.UnitTests/Excursionistas.UnitTests.csproj" />
+    <Project Path="tests/Excursionistas.IntegrationTests/Excursionistas.IntegrationTests.csproj" />
+  </Folder>
 </Solution>
