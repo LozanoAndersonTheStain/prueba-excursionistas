@@ -1,13 +1,13 @@
 namespace Excursionistas.Application.DTOs.Request;
 
 /// <summary>
-/// DTO for updating an existing element.
-/// Extends CreateElementRequest with additional properties for updates.
+/// DTO para actualizar un elemento existente.
+/// Extiende CreateElementRequest con propiedades adicionales para las actualizaciones.
 /// </summary>
 public class UpdateElementRequest : CreateElementRequest
 {
     /// <summary>
-    /// Indicates whether the element should be active.
+    /// Indica si el elemento debe estar activo.
     /// </summary>
     public bool IsActive { get; set; } = true;
 }
