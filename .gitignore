@@ -1,37 +1,46 @@
 # Build results
-bin/
-obj/
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Ww][Ii][Nn]32/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
 
-# User-specific files
-*.user
+# Visual Studio
+.vs/
+.vscode/
 *.suo
+*.user
 *.userosscache
 *.sln.docstates
 
-# Mono Auto Generated Files
-mono_crash.*
+# User-specific files
+*.rsuser
+*.suo
+*.user
 
-# Build directories for Visual Studio
-Debug/
-Release/
-x64/
-x86/
-build/
-bld/
-[Bb]uild/
-[Bb]in/
-[Oo]bj/
+# Files built by Visual Studio
+*.pidb
+*.svclog
+*.scc
 
-# Visual Studio Code
-.vscode/
+# Test Results
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+*.VisualState.xml
+TestResult.xml
+[Dd]ebugPS/
+[Rr]eleasePS/
 
-# Rider
-.idea/
-
-# NuGet
-*.nupkg
-packages/
-*.snupkg
+# .NET Core
 project.lock.json
 project.fragment.lock.json
 artifacts/
@@ -39,7 +48,38 @@ artifacts/
 # ASP.NET Scaffolding
 ScaffoldingReadMe.txt
 
-# Others
+# NuGet
+*.nupkg
+*.snupkg
+**/packages/*
+!**/packages/build/
+*.nuget.props
+*.nuget.targets
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Database
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# JetBrains Rider
+.idea/
+*.sln.iml
+
+# User secrets
+secrets.json
+
+# Logs
 *.log
 *.tlog
 *.vspscc
@@ -75,3 +115,5 @@ ehthumbs.db
 
 # Windows shortcuts
 *.lnk
+
+/files
