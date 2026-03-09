@@ -1,0 +1,62 @@
+# Directorios de build y output
+**/bin/
+**/obj/
+**/out/
+
+# Archivos de IDE y editor
+**/.vs/
+**/.vscode/
+**/.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Base de datos local
+*.db
+*.db-shm
+*.db-wal
+excursionistas.db*
+
+# Logs
+**/logs/
+*.log
+
+# Archivos de prueba y coverage
+**/TestResults/
+**/.testRun/
+**/coverage/
+*.trx
+
+# Node modules (si hubiera)
+**/node_modules/
+
+# Git
+.git/
+.gitignore
+.gitattributes
+
+# Docker
+.dockerignore
+Dockerfile
+docker-compose.yml
+
+# Documentación y otros
+README.md
+CHANGELOG.md
+LICENSE
+docs/
+
+# Archivos temporales
+**/*.tmp
+**/*.temp
+**/.DS_Store
+**/Thumbs.db
+
+# Variables de entorno (no copiar .env en build)
+.env
+.env.*
+
+# Carpetas de paquetes NuGet
+**/.nuget/
+**/packages/
