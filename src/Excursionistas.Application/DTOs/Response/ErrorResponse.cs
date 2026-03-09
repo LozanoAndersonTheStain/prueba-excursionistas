@@ -1,32 +1,32 @@
 namespace Excursionistas.Application.DTOs.Response;
 
 /// <summary>
-/// DTO de respuesta para errores.
+/// DTO utilizado para representar respuestas de error en la API.
 /// </summary>
 public class ErrorResponse
 {
     /// <summary>
-    /// Código de error del dominio.
+    /// Código de error proveniente del dominio o la aplicación.
     /// </summary>
     public string ErrorCode { get; set; } = string.Empty;
 
     /// <summary>
-    /// Mensaje descriptivo del error.
+    /// Mensaje descriptivo del error ocurrido.
     /// </summary>
     public string Message { get; set; } = string.Empty;
 
     /// <summary>
-    /// Stack trace (solo en desarrollo).
+    /// Stack trace del error (solo se incluye en entornos de desarrollo).
     /// </summary>
     public string? StackTrace { get; set; }
 
     /// <summary>
-    /// Errores de validación detallados.
+    /// Lista detallada de errores de validación por campo.
     /// </summary>
     public Dictionary<string, List<string>>? ValidationErrors { get; set; }
 
     /// <summary>
-    /// Timestamp del error.
+    /// Fecha y hora en que ocurrió el error.
     /// </summary>
     public DateTime Timestamp { get; set; } = DateTime.UtcNow;
 }

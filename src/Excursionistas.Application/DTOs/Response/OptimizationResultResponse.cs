@@ -1,42 +1,43 @@
 namespace Excursionistas.Application.DTOs.Response;
 
 /// <summary>
-/// Response DTO for optimization result.
+/// DTO de respuesta que representa el resultado de un cálculo de optimización.
 /// </summary>
 public class OptimizationResultResponse
 {
     /// <summary>
-    /// Indicates whether a viable solution was found.
+    /// Indica si se encontró una solución viable para la optimización.
     /// </summary>
     public bool Success { get; set; }
 
     /// <summary>
-    /// Descriptive message of the result.
+    /// Mensaje descriptivo del resultado de la optimización.
     /// </summary>
     public string Message { get; set; } = string.Empty;
 
     /// <summary>
-    /// Elements selected in the optimal combination.
+    /// Lista de elementos seleccionados en la combinación óptima.
     /// </summary>
     public List<ElementResponse> SelectedElements { get; set; } = new();
 
     /// <summary>
-    /// Total weight of selected elements.
+    /// Peso total de los elementos seleccionados.
     /// </summary>
     public decimal TotalWeight { get; set; }
 
     /// <summary>
-    /// Total calories of selected elements.
+    /// Calorías totales aportadas por los elementos seleccionados.
     /// </summary>
     public decimal TotalCalories { get; set; }
 
     /// <summary>
-    /// Number of elements in the solution.
+    /// Cantidad de elementos incluidos en la solución óptima.
     /// </summary>
     public int ItemCount { get; set; }
 
     /// <summary>
-    /// Average calorie efficiency (calories/weight).
+    /// Eficiencia calórica promedio de la combinación seleccionada.
+    /// (calorías/peso).
     /// </summary>
     public decimal AverageEfficiency { get; set; }
 }
